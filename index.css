@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end reset*/
+
+* {
+    box-sizing:border-box;
+    font-size:62.5%;
+    
+}
+
+html {
+    font-family: 'Passion One', cursive;
+    color:goldenrod;
+    font-size:2rem;
+}
+
+body {
+    background-image: url("bGreen.jpg");
+    background-repeat:no-repeat;
+    background-position:fixed;
+    background-size:cover;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    color:gold;
+    font-size:4rem;
+}
+
+h2 {
+    font-family: 'Francois One', sans-serif;
+    color:gold;
+    font-size:3rem;
+}
+
+h3{
+    font-family: 'Francois One', sans-serif;
+    color:gold;
+    font-size:2rem;
+}
+
+a {
+    text-decoration:none;
+    color:peru;
+}
+
+#titleContains{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+
+
+header {
+    display:flex;
+    margin: 1%;
+    justify-content: flex-end;
+}
+
+
+
+footer {
+    display:flex;
+    margin: 1%;
+    justify-content:flex-end;
+}
+
+
+
+
+nav {
+    display:flex;
+    justify-content:flex-end;
+    text-align:center;
+    align-items:center;
+    align-content:flex-start;
+
+}
+
+nav div {
+    width: 20%;
+    border-color:yellow;
+}
+
+nav a {
+    padding:2%;
+}
+
+section {
+    margin:1%;
+}
+
+#topPhoto {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin: 2.5% auto;
+    width: 50%;
+}
+
+#topPhoto img {
+    border-radius: 50%;
+    width:50%;
+    border:.1rem solid;
+    border-color:khaki;
+}
+
+#titleContainsTwo  {
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    align-items:flex-start;
+    align-content:center;
+    margin: 5% auto;
+}
+
+#ingredients {
+    display:flex;
+    flex-direction:column;
+    margin: 0 auto;
+    width: 40%;
+}
+
+#recipe {
+    display:flex;
+    flex-direction:column;
+    margin: 0 auto;
+    width: 40%;
+}
+
+/* Responsiveness */
+
+@media(max-width:500px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size:1.5rem;
+    }
+
+    h3 {
+        font-size:1.25rem;
+    }
+
+    body {
+        font-size:.75rem;
+    }
+
+    a {
+        font-size:.5rem;
+    }
+
+    #titleContainsTwo  {
+        display:flex;
+        flex-direction:column;
+    }
+
+    #titleContainsTwo h2 {
+        margin:7% auto;
+    }
+
+    #titleContainsTwo h3 {
+        margin:7% 0;
+    }
+
+    #ingredients {
+        margin: 5% auto;
+    }
+
+    #topPhoto {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin: 0 auto;
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+    #topPhoto img {
+        border-radius: 50%;
+        width:50%;
+        border:.1rem solid;
+        border-color:khaki;
+       
+    }
+
+    nav div {
+        width: 30%;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    title{
+        width: 60%;
+    }
+ 
+}
+
+@media(max-width:800px){
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size:2rem;
+    }
+
+    h3 {
+        font-size:1.5rem;
+    }
+
+    body {
+        font-size:1rem;
+    }
+
+    a {
+        font-size:.8rem;
+    }
+
+    #titleContainsTwo  {
+        display:flex;
+        flex-direction:column;
+    }
+
+    #titleContainsTwo h2 {
+        margin:7% auto;
+    }
+
+    #titleContainsTwo h3 {
+        margin:7% 0;
+    }
+
+    #ingredients {
+        margin: 2% auto;
+    }
+
+    #topPhoto {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin: 0 auto;
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+    #topPhoto img {
+        border-radius: 50%;
+        width:50%;
+        border:.1rem solid;
+        border-color:khaki;
+       
+    }
+
+    nav div {
+        width: 30%;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    title{
+        width: 60%;
+    }
+}
+
+@media(max-width:1000px){
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size:2rem;
+    }
+
+    h3 {
+        font-size:1.5rem;
+    }
+
+    body {
+        font-size:1rem;
+    }
+
+    a {
+        font-size:.8rem;
+    }
+
+    #titleContainsTwo  {
+        display:flex;
+        width:90%;
+        justify-content: space-between;
+        align-items:baseline;
+        align-content:center;
+        margin: 5% auto;
+    }
+    
+
+
+    #ingredients {
+        margin: 2% auto;
+    }
+
+    #topPhoto {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin: 0 auto;
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+    #topPhoto img {
+        border-radius: 50%;
+        width:50%;
+        border:.1rem solid;
+        border-color:khaki;
+       
+    }
+
+    nav div {
+        width: 30%;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    title{
+        width: 60%;
+    }
+}
